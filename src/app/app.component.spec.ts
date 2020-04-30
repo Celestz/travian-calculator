@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'teuton-calc'`, () => {
+  it(`should have as title 'travian-calculator'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('teuton-calc');
+    expect(app.title).toEqual('travian-calculator');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('teuton-calc app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('travian-calculator app is running!');
   });
 });
