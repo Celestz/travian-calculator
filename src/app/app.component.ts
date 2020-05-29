@@ -2,6 +2,8 @@ import { Component, } from '@angular/core'
 import { Teutons } from './units/teutons'
 import { Romans } from './units/romans'
 import { Gauls } from './units/gauls'
+import { Egyptians } from './units/egyptians'
+import { Huns } from './units/huns'
 
 @Component({
   selector: 'my-app',
@@ -14,18 +16,24 @@ export class AppComponent {
     teutons: [],
     romans: [],
     gauls: [],
+    egyptians: [],
+    huns: [],
   }
 
   units = {
     teutons: Teutons,
     romans: Romans,
     gauls: Gauls,
+    egyptians: Egyptians,
+    huns: Huns,
   }
 
   tabs = [
     'romans',
     'teutons',
-    'gauls'
+    'gauls',
+    'egyptians',
+    'huns'
   ]
 
   totalResources = 0
